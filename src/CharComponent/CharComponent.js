@@ -1,11 +1,13 @@
 import React from "react";
-import { StyledChar } from "./../CustomStyles";
+import { StyledChar, StyledP } from "./../CustomStyles";
 
 const CharComponent = (props) => {
   return (
-    <StyledChar onClick={props.click} length={props.length}>
-      {props.letter}
-    </StyledChar>
+    <StyledP>
+      <StyledChar onClick={props.click} length={props.length}>
+        {props.letter}
+      </StyledChar>
+    </StyledP>
   );
 };
 
